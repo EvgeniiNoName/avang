@@ -1,0 +1,58 @@
+  .navigation {
+    display: none;
+    position: fixed;
+    width:  100%;
+    top: 0;
+    background-color: rgb(16, 24, 32);
+    z-index: 1000;
+  }
+
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Добавляем flex-контейнер для горизонтального выравнивания */
+
+  }
+
+  .navigation ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block; /* Оставляем блочный режим для ссылок */
+    transition: 0.3s;
+    position: relative;
+    overflow:hidden;
+    &:after {
+      position: absolute;
+      transition: .3s;
+      content: '';
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      height: 3px;
+      background: #f7f7f7;
+    }
+    &:hover {
+      cursor: pointer;
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+
+  .navigation ul li:first-child a {
+    margin-left: 20px; /* Расстояние между первым элементом и следующими */
+  }
+
+  /* .navigation ul li a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  } */
+
+  .navigation_active {
+    display: block;
+
+  }
+

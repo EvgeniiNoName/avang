@@ -1,0 +1,80 @@
+.slider-container {
+    overflow: hidden;
+    margin-bottom: 30px;
+    width: 80vw;
+    min-width: calc(85px + 138px + 151px + 112px);
+  }
+
+  .slider-track {
+    display: flex;
+  }
+
+  .slider-item {
+    flex: 0 0 calc((80vw / 3) - 26px);
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    height: 40vh; /* задаем высоту */
+    background-repeat: no-repeat;
+
+    border: 1px solid rgb(230,75,56);
+    background-color: rgb(16, 24, 32);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+
+    transition: transform 0.5s ease-in-out;
+  }
+
+
+.wrapper {
+    margin-bottom: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    min-width: calc(85px + 138px + 151px + 112px);
+
+}
+
+#prevButton, #nextButton {
+  padding: 5px 20px;
+  background-color: rgba(230, 75, 56, 0.2);
+  color: white;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 200px;
+  border: none;
+  transition: background-color 0.5s;
+}
+#nextButton > span::after {
+  content: '>';
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#prevButton > span::before {
+  content: '<';
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#nextButton:hover span::after {
+  opacity: 1;
+}
+
+#prevButton:hover span::before {
+  opacity: 1;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+  background-color: rgba(230, 75, 56, 0.8);
+}
+
+  .slider-buttons {
+    text-align: center; }
+

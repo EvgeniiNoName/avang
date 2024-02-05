@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ООО ПКФ АВАНГАРД</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/source/logo/logo.ico" type="Image/x-icon">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style_nav.css">
+  <link rel="stylesheet" href="CSS/wrapper.css">
 </head>
 <body>
-  <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
-  <link type="Image/x-icon" href="/favicon.ico" rel="icon">
-  <header>    
-    <nav>
+
+  <header>
+    <nav class="navigation" id="navigation">
       <ul>
         <li><a href="#home">Главная</a></li>
         <li><a href="#about">О нас</a></li>
@@ -20,45 +22,67 @@
       </ul>
     </nav>
   </header>
-  <main>    
+  <main>
     <div class="home" id="home">
-        <img class="logo" src="source/logo/logo_white.svg" alt="">
-        <div class="home-menu__text">
+      <div class="home_content">
+        <div class="home_logo">
+          <img class="logo" src="source/logo/logo_white.svg" alt="">
+          <div class="home-menu__text">
             <h1>ООО ПКФ АВАНГАРД</h1>
             <p>Проектные и электромонтажные работы</p>
+          </div>
         </div>
-
+        <div class="home_menu" id="home_menu">
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Наши услуги</a></li>
+            <li><a href="#clients">Наши клиенты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="card" id="about">
       <h2 class="section_title">О нас</h2>
-      <p>We are a team of web developers who specialize in building responsive and user-friendly websites.</p>
+      <p>Мы - команда веб-разработчиков, специализирующихся на создании отзывчивых и удобных в использовании веб-сайтов.</p>
     </div>
     <div class="card" id="services">
       <h2 class="section_title">Наши услуги</h2>
-      <ul>
-        <li>Web Design</li>
-        <li>Web Development</li>
-        <li>SEO Optimization</li>
-        <li>Content Management</li>
-      </ul>
+      <div class="wrapper">
+        <div class="slider-container">
+            <div class="slider-track">
+              <div class="slider-item" id="first_example">1</div>
+              <div class="slider-item" id="second_example">2</div>
+              <div class="slider-item" id="third_example">3</div>
+              <div class="slider-item" id="fourth_example">4</div>
+              <div class="slider-item" id="fifth_example">5</div>
+              <div class="slider-item" id="sixth_example">6</div>
+            </div>
+        </div>
+        <div class="slider-buttons">
+          <button id="prevButton"><span><</span></button>
+          <button id="nextButton"><span>></span></button>
+        </div>
+    </div>
     </div>
     <div class="card" id="clients">
-        <h2 class="section_title">Наши клиенты</h2>
-        <ul>
-          <li>Web Design</li>
-          <li>Web Development</li>
-          <li>SEO Optimization</li>
-          <li>Content Management</li>
-        </ul>
-      </div>
+      <h2 class="section_title">Наши клиенты</h2>
+      <ul>
+        <li>Веб-дизайн</li>
+        <li>Веб-разработка</li>
+        <li>SEO-оптимизация</li>
+        <li>Управление контентом</li>
+      </ul>
+    </div>
     <div class="card" id="contact">
       <h2 class="section_title">Контакты</h2>
-      <p>Email us at info@example.com</p>
-      <p>Телефон:+7(999)888-77-66</p>
+      <p>Пишите нам по адресу info@example.com</p>
+      <p>Телефон: +7 (999) 888-77-66</p>
       <p>Адрес: г. Красноярск, ул. Норильская, д. 4, оф. 222</p>
-      
     </div>
   </main>
-  <script src="/index.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="JS/wrapper.js"></script>
+
 </body>
 </html>

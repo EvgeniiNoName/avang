@@ -1,0 +1,127 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+html, body {
+  margin: 0;
+}
+
+.home {
+  height: 100vh;
+  background: rgb(230,75,56);
+  position: relative;
+  color: #fff;
+}
+
+.home_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  min-width: calc(85px + 138px + 151px + 112px);
+}
+
+.logo {
+  height: 110px;
+  margin-right: 25px;
+  width: 200px;
+}
+
+.home_logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  vertical-align: baseline;
+  justify-content: center;
+}
+
+.home-menu__text > h1, p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.home_menu {
+  display: block;
+  width:  100%;
+  top: 0;
+
+}
+
+.home_menu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.home_menu ul li a {
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  border: 1px solid white;
+  border-radius: calc(42px + 1em);
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.home_menu ul li a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: rgb(230,75,56);;
+  transition: 0.5s;
+}
+
+
+.section_title {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  display: box;
+  box-sizing: border-box;
+  color: white;
+  background: rgb(230,75,56);
+  font-size: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+  width: 150px; /* задаем ширину */
+  height: 2em; /* задаем высоту */
+}
+
+
+.card {
+  position: relative;
+  display: block;
+  padding: 90px 20px;
+  height: 80vh; /* задаем высоту */
+  scroll-margin-top: 47.5px;
+}
+
+.card:nth-child(odd) {
+  /* background-color: rgb(42, 205, 236); */
+  background-color: rgb(16, 24, 32);
+  color: white;
+}
+
+.card#clients{
+  text-align: center;
+  height: calc(100vh - 80px - 410px);
+  }
+
+
+.card#contact{
+  border: 1px solid rgb(230,75,56);
+  height: 80px;
+  background-color: rgb(16, 24, 32);
+  color: white;
+  text-align: center;
+}
+
+.section_title,p{
+  font-size: 1.2rem;
+}
